@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Isla</title>
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Boxicon -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- Remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+
+      <a href="#" class="logo">LA ISLA</a>
+
+      <ul class="navlist">
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/nosotros/nosotros.html">Nosotros</a></li>
+        <li><a href="/ranking/ranking.php">Ranking</a></li>
+   
+        <li><button href="#" class="btnLogin-popup">Login</button></li>
+      </ul>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>LA ISLA</h1>
+        <p>
+          
+        </p>
+        <a href="/ranking/ranking.php">Ranking</a>
+        <a href="#" class="ctaa"><i class="ri-play-fill">Play game</i></a>
+      </div>
+
+      <!--Login VentanaModal-->
+      <div class="wrapper">
+        <span class="icon-close">
+          <i class="ri-close-line"></i>
+        </span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="login.php" method="post">
+            <div class="input-box">
+              <span class="icon"><i class="ri-mail-line"></i></span>
+              <input type="email" name="email" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="ri-lock-fill"></i></span>
+              <input type="password" name="password" required />
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" />Recordar</label>
+              <a href="#">¿Olvidaste la contraseña?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+              <p>
+                ¿No tienes una cuenta?<a class="register-link">
+                  Registrate</a>
+              </p>
+            </div>
+          </form>
+        </div>
+        
+
+        <div class="form-box register">
+          <h2>Registrate</h2>
+          <form action="registro.php" method="post">
+            <div class="input-box">
+              <span class="icon"><i class="ri-mail-line"></i></span>
+              <input type="text" required name="username" />
+              <label>Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="ri-mail-line"></i></span>
+              <input type="email" required name="email" />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="ri-lock-fill"></i></span>
+              <input type="password" required name="password" />
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label
+                ><input  type="checkbox" />Acepto los Términos y
+                condiciones</label
+              >
+            </div>
+            <button type="submit" class="btn">Registrarse</button>
+            <div class="login-register">
+              <p>
+                ¿Ya tienes una cuenta?<a href="#" class="login-link"> Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+	
+    
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-bottom">
+        <p>© 2023 La Isla. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <div class="scroll-down">
+      <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+      <a href="#"></a>
+    </div>
+
+    <!--Efecto de scroll-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
